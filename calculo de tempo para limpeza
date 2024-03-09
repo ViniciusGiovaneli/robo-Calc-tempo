@@ -23,10 +23,10 @@ int main() {
     tempo = area / 5 ;
     tempo = ceil(tempo);
     // Exibe a área da sala
-    printf("A area da sala e: %.2f metros quadrados\n", area);
+    printf("A area da sala e: %.f metros quadrados\n", area);
 
     // Exibe o tempo total de limpeza
-    printf("O robo de limpeza levara %.2f minutos\n", tempo);
+    printf("O robo de limpeza levara %.f minutos para limpar a sala\n", tempo);
 
     return 0;
 }
