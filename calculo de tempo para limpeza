@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+	
+	//add biblioteca math.h para add a função ceil que ira arredondar o valor final sempre para cima
+int main() {
+    float largura, comprimento, area, tempo;
+
+	//Mensagem inicial
+	printf("digite os valores de largura e altura para que o robo calcule o tempo estimado para a limpeza.\n");
+    
+	// Solicita as dimensões da sala
+    printf("Digite a largura da sala em metros: ");
+    scanf("%f", &largura);
+
+    printf("Digite o comprimento da sala em metros: ");
+    scanf("%f", &comprimento);
+
+
+    // Calcula a área da sala
+    area = largura * comprimento;
+
+    // Calcula o tempo total de limpeza
+    tempo = area / 5 ;
+    tempo = ceil(tempo);
+    // Exibe a área da sala
+    printf("A area da sala e: %.2f metros quadrados\n", area);
+
+    // Exibe o tempo total de limpeza
+    printf("O robo de limpeza levara %.2f minutos\n", tempo);
+
+    return 0;
+}
